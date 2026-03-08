@@ -1,30 +1,29 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../../public/instragram_logo_white.svg";
-import FacebookLogo  from "../../public/facebook_logo.svg";
+import logo from "../assets/instragram_logo_white.svg";
+import FacebookLogo  from "../assets/facebook_logo.svg";
 ---
 
 <footer class="h-auto w-screen flex flex-col items-center p-8 bg-teal-900" id="contact">
     <h1 class="text-4xl font-bold text-gray-300">Contact Us</h1>
-    <div class="py-4 flex flex-wrap gap-12 justify-center items-center"> 
-        <div>
-            <h1 class="text-xl font-medium mt-4 text-gray-300">Phone</h1>
-            <a href="tel:123-456-7890" class="text-blue-300 hover:underline ">07783967986</a>
+    <div class="py-4 flex flex-wrap gap-6 justify-around w-full items-center"> 
+        <div class="flex flex-col items-center">
+            <h1 class="text-2xl font-medium mt-4 text-gray-300">Phone</h1>
+            <a href="tel:07783967986" class="text-blue-300 hover:underline text-2xl">07783967986</a>
+        </div>
+        
+        <div class="flex flex-col items-center">
+            <h1 class="text-2xl font-medium text-gray-300 mt-4">Email</h1>
+            <a href="mailto:tezdecor4u@gmail.com" class="text-blue-300 hover:underline text-2xl">tezdecor4u@gmail.com</a>
         </div>
         <div>
-            <h1 class="text-xl font-medium text-gray-300 mt-4">Email</h1>
-            <a href="mailto:info@tezdecor.com" class="text-blue-300 hover:underline">tezdecor4u@gmail.com</a>
-        </div>
-    </div>
-    <div class="flex gap-6 items-center justify-center">
-    <div>
             <a href="https://www.instagram.com/tezdecorating/" target="_blank" rel="noopener noreferrer">
-            <Image src={logo} loading="eager" alt="Instagram Logo" class="w-6 py-2 fill-white mt-4" />
+            <Image src={logo} loading="eager" alt="Instagram Logo" class="w-10 py-2 fill-white mt-4" loading="lazy" />
             </a>
         </div>
         <div>
             <a href="https://www.facebook.com/share/1KYJL5DZwa" target="_blank" rel="noopener noreferrer">
-            <Image src={FacebookLogo} loading="eager" alt="Facebook Logo" class="w-6 py-2 fill-white mt-4" />
+            <Image src={FacebookLogo} loading="eager" alt="Facebook Logo" class="w-10 py-2 fill-white mt-4" loading="lazy" />
             </a>
         </div>
     </div>

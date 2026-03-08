@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Grown";
-  src: url("/public/Grown.ttf") format("ttf");
+  src: url("../../public/Grown.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

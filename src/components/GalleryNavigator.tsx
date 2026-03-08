@@ -10,6 +10,7 @@ export default function GalleryNavigator({ images }: { images: string[] }) {
               src={src}
               alt={src}
               className="w-1/2 rounded-lg cursor-pointer md:w-1/3 lg:w-1/2 md:h-96 object-cover"
+              loading="lazy"
             />
           </PhotoView>
         ))}
