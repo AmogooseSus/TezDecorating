@@ -1,0 +1,24 @@
+---
+import Service from "../components/service.astro";
+---
+
+<section class="h-auto w-screen flex flex-col items-center p-8" id="services">
+  <h1 class="text-4xl font-bold text-gray-800">Our Services</h1>
+  <div class="flex flex-col md:flex-row">
+    <Service
+      imageUrl="/painting.jpg"
+      title="Interior Painting"
+      description="Our skilled painters transform your space with precision and care, delivering flawless interior painting services that enhance the beauty of your home."
+    />
+    <Service
+      imageUrl="/wallpaper.jpg"
+      title="Wallpaper Installation"
+      description="Transform your space with our professional wallpaper installation services, delivering stunning results that enhance the beauty of your home."
+    />
+    <Service
+      imageUrl="/faux.jpg"
+      title="Faux Finishes"
+      description="Enhance your space with our professional faux finish services, creating a unique and elegant look that elevates the beauty of your home."
+    />
+  </div>
+</section>
